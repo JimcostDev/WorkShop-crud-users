@@ -1,0 +1,35 @@
+﻿
+@model CrudEntityFramework.Models.Usuario
+
+@{
+    ViewData["Title"] = "Detalles de usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">CRUD Usuarios</h1>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <div class="card border">
+            <div class="card-header">
+                <h3>Detalles de usuario</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><b>Nombre: </b> @Html.DisplayFor(m => m.Nombre)</li>
+                    <li class="list-group-item"><b>Teléfono: </b> @Html.DisplayFor(m => m.Telefono)</li>
+                    <li class="list-group-item"><b>Celular: </b> @Html.DisplayFor(m => m.Celular)</li>
+                    <li class="list-group-item"><b>Email: </b> @Html.DisplayFor(m => m.Email)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index"> Volver a lista</a>
+</div>
+
+
+
+
+
